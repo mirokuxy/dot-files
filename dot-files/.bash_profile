@@ -34,7 +34,7 @@ eval "$(thefuck --alias)"
 # ------------------- #
 
 
-# ----- Temp LLVM ----- # 
+# ----- Temp LLVM ----- #
 export LLVM="${HOME}/Projects/CMPT479/llvm"
 # ---------------------- #
 
@@ -45,7 +45,7 @@ export PATH=${PATH}:${HOME}/Spark/spark-2.2.0-bin-hadoop2.7/bin
 
 
 # ----- Other Dot Files ----- #
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra,bash_projects}; do
+for file in ~/.{bash_prompt,bash_aliases}; do
   [ -r "$file" ] && source "$file"
 done
 unset file

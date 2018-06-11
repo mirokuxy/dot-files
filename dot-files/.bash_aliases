@@ -22,30 +22,30 @@ alias lla="ls -alh"
 # - Short Formats - #
 
 # List only directories
-alias lsd='ls -p | grep / '
+alias lsd='ls -p | grep "/$" '
 
 # List only files
-alias lsf='ls -p | grep -v / '
+alias lsf='ls -p | grep -v "/$" '
 
 # List only dot directories
-alias lsdd='ls -ap | grep / | grep "^\." '
+alias lsdd='ls -ap | grep "/$" | grep "^\." '
 
 # List only dot files
-alias lsfd='ls -ap | grep -v / | grep "^\." '
+alias lsfd='ls -ap | grep -v "/$" | grep "^\." '
 
 # - Long Formats - #
 
 # List only directories, in long format
-alias lld='ls -lhp | grep / '
+alias lld='ls -lhp | grep "/$" '
 
 # List only files, in long format
-alias llf='ls -lhp | grep -v / '
+alias llf='ls -lhp | grep -v "/$" '
 
 # List only dot directories, in long format
-alias lldd='ls -alhp | grep / | grep " \." '
+alias lldd='ls -alhp | grep "/$" | grep " \." '
 
 # List only dot files, in long format
-alias llfd='ls -alhp | grep -v / | grep " \." '
+alias llfd='ls -alhp | grep -v "/$" | grep " \." '
 
 
 
