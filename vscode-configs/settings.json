@@ -1,0 +1,50 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.formatOnSave": true,
+  "editor.fontSize": 13,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 60000,
+  "files.exclude": {
+    /* git */
+    "**/.git": true,
+    "**/.gitignore": false,
+    /* python */
+    "**/.python-version": true,
+    "**/venv": true,
+    "**/__pycache__": true,
+    "**/.ipynb_checkpoints": true, /* ipython notebook */
+    /* node */
+    "**/node_modules": true,
+    /* ruby */
+    "**/.ruby-version": true,
+    "**/Gemfile.lock": false, /* Ruby */
+    "**/.sass-cache": true, /* Jekyll */
+    /* meteor */
+    ".meteor": true,
+    /* other */
+    "**/.DS_Store": true,
+    "**/a.out": true,
+  },
+  "files.associations": {
+    ".bash_profile": "shellscript",
+    ".bash_aliases": "shellscript",
+    ".bash_prompt": "shellscript",
+    ".pystartup": "python"
+  },
+  "files.insertFinalNewline": true,
+  "html.format.enable": false,
+  "typescript.referencesCodeLens.enabled": false,
+  "typescript.implementationsCodeLens.enabled": false,
+  //"gitlens.blame.annotation.style": "compact",
+  //"gitlens.codeLens.visibility": "auto",
+  "window.zoomLevel": 1,
+  "python.formatting.provider": "yapf",
+  "gitlens.keymap": "alternate",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "workbench.colorTheme": "Solarized Dark",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+}

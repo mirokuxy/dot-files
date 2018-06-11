@@ -1,0 +1,43 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"file_exclude_patterns":
+	[
+		".gitignore",
+		"a.out",
+		".DS_Store",
+		".python-version",
+		".ruby-version",
+		"Gemfile.lock" /* Ruby */
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		"venv",
+		"__pycache__",
+		".ipynb_checkpoints",
+		"migrations",
+		"node_modules",
+		".meteor",
+		".sass-cache"  /* Jekyll */
+	],
+	"font_face": "Consolas",
+	"font_size": 18,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"ignored_words":
+	[
+		"Utils",
+		"llvm"
+	],
+	"indent_to_bracket": true,
+	"rulers":
+	[
+		79
+	],
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true
+}

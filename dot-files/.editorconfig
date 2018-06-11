@@ -1,0 +1,102 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# http://editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 80
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.{js,jsx,ts,tsx}]
+indent_style = space
+indent_size = 2
+
+[*.{css,styl,scss,less,sass}]
+indent_style = space
+indent_size = 2
+
+[*.html]
+indent_style = space
+indent_size = 2
+
+[*.{json,yml}]
+indent_style = space
+indent_size = 2
+
+[package.json]
+indent_style = space
+indent_size = 2
+
+[Makefile]
+indent_style = tab
+
+[*.bat]
+indent_style = tab
+
+[**.min.js]
+indent_style = unset
+indent_size = unset
+insert_final_newline = unset
+
+# [*]
+# [*.{js,py}]
+# [*.py]
+# [Makefile]
+# [lib/**.js]
+# [{package.json,.travis.yml}]
+
+
+# Universal Properties
+#
+# indent_style = space # tab | space
+# indent_size = 4 # int | tab
+# tab_width = 4 # a positive integer (defaults indent_size when indent_size is a number)
+# end_of_line = lf #  lf | cr | lf
+# charset = utf-8 # latin1 | utf-8 | utf-16be | utf-16le
+# trim_trailing_whitespace = true # true | false
+# insert_final_newline = true | false
+# max_line_length = 80 # positive int, only emax or vim
+
+
+# Domain-Specific Properties - The following properties are not intended to be implemented by EditorConfig.
+#
+# This is simply a brainstorm of domain-specific properties that could be supported
+# by some tools that rely on EditorConfig files.
+#
+# single | double | auto
+# quote_type =
+
+# domain: C-family languages (such as C, C++, D, Objective-C, etc.)
+# c_include_path =
+
+# domain: java
+# java_class_path = # domain: java
+
+# true | fasle, domnain: C-family languages (such as C, C++, Java, Javascript, etc.)
+# curly_bracket_next_line =
+
+# true | false | hybrid
+# spaces_around_operators =
+
+# none | inside | outside | both
+# spaces_around_brackets =
+
+# K&R | Allman | GNU | Horstmann, domain: C-family languages (such as C, C++, Java, Javascript, etc.) with code blocks using curly braces
+# indent_brace_style =
+
+# int, domain: JetBrains (IntelliJ IDEA)
+# continuation_indent_size =
