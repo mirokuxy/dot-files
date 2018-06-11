@@ -1,25 +1,16 @@
 #!/usr/bin/env bash
 
-# target config file location
-dest_config=~/Library/Application\ Support/Code/User/settings.json
-backup_config=${dest_config}.backup
-# config file in this repo
-source_config=${PWD}/settings.json
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd ${script_dir}
 
-echo "Symlinking: ${source_config} -> ${dest_config}"
+source ../utils.sh
 
-# backup existing config file
-if [ -e "${dest_config}" ]; then
-  echo "Existing ${dest_config} found. Backing up -> ${backup_config}"
-  mv "${dest_config}" "${backup_config}"
-else
-  echo "No existing ${dest_config} found"
-fi
+echo "Placing vscode config file"
 
-# create symlink at target location of the config file in this repo
-if `ln -s "${source_config}" "${dest_config}"`; then
-  echo "Symlinking successful"
-else
-  echo "Symlinking failed"
-fi
+dest_config=~/Library/Application\ Support/Code/User/settings.json # target config file location
+backup_config="${dest_config}.backup"
+source_config="${script_dir}/settings.json" # config file in this repo
 
+place_symlink "$dest_config" "$backup_config" "$source_config"
+
+echo "Done"
