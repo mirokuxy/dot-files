@@ -1,3 +1,6 @@
+# ls shortcuts #
+################
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
   colorflag="--color"
@@ -5,26 +8,46 @@ else # OS X `ls`
   colorflag="-G"
 fi
 
-# List all files colorized in long format
+# - Frequent Shortcuts - #
+
+# List in long format
 alias ll='ls -lh'
 
-# List all files, including dot files
-alias la="ls -ha"
+# List all files
+alias la="ls -a"
 
-# List all files colorized in long format, including dot files
-alias lla="ls -lha"
+# List all files, in long format
+alias lla="ls -alh"
+
+# - Short Formats - #
 
 # List only directories
-alias ld='ls -l | grep "^d"'
-
-# List only dot directories
-alias ldd='ls -la | grep "^d" | grep "\." '
+alias lsd='ls -p | grep / '
 
 # List only files
-alias lf='ls -l | grep "^[^d]"'
+alias lsf='ls -p | grep -v / '
+
+# List only dot directories
+alias lsdd='ls -ap | grep / | grep "^\." '
 
 # List only dot files
-alias lfd='ls -la | grep "^[^d]" | grep "\." '
+alias lsfd='ls -ap | grep -v / | grep "^\." '
+
+# - Long Formats - #
+
+# List only directories, in long format
+alias lld='ls -lhp | grep / '
+
+# List only files, in long format
+alias llf='ls -lhp | grep -v / '
+
+# List only dot directories, in long format
+alias lldd='ls -alhp | grep / | grep " \." '
+
+# List only dot files, in long format
+alias llfd='ls -alhp | grep -v / | grep " \." '
+
+
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
