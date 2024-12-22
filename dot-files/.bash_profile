@@ -6,11 +6,15 @@ export PATH
 
 
 # ----- Python ----- #
+
+# Setting PATH for Python 3.10
+export PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
 # Python startup file, containing commands to run before python interactive console starts
 export PYTHONSTARTUP="$HOME/.pystartup"
 
 # PYENV
 export PYENV_ROOT=/usr/local/var/pyenv
+export PATH=$(pyenv root)/shims:$PATH
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi   # shims, aotucompletion
 
 # PYVENV
@@ -43,6 +47,7 @@ export PYSPARK_PYTHON=python3
 export PATH=${PATH}:${HOME}/Spark/spark-2.2.0-bin-hadoop2.7/bin
 # ---------------------- #
 
+export HISTCONTROL=ignorespace
 
 # ----- Other Dot Files ----- #
 for file in ~/.{bash_prompt,bash_aliases}; do

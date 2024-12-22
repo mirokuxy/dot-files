@@ -5,31 +5,37 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 60000,
   "files.exclude": {
-    /* git */
+    ".meteor": true,
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
     "**/.git": true,
     "**/.gitignore": false,
-    /* python */
+    "**/.ipynb_checkpoints": true,
     "**/.python-version": true,
-    "**/venv": true,
-    "**/__pycache__": true,
-    "**/.ipynb_checkpoints": true, /* ipython notebook */
-    /* node */
-    "**/node_modules": true,
-    /* ruby */
     "**/.ruby-version": true,
-    "**/Gemfile.lock": false, /* Ruby */
-    "**/.sass-cache": true, /* Jekyll */
-    /* meteor */
-    ".meteor": true,
-    /* other */
-    "**/.DS_Store": true,
+    "**/.sass-cache": true,
+    "**/*.o": true,
+    "**/*.tar.gz": true,
+    "**/*.zip": true,
     "**/a.out": true,
+    "**/Gemfile.lock": false,
+    "**/node_modules": true,
+    "**/venv": true
   },
   "files.associations": {
     ".bash_profile": "shellscript",
     ".bash_aliases": "shellscript",
     ".bash_prompt": "shellscript",
-    ".pystartup": "python"
+    ".pystartup": "python",
+    "Vagrantfile": "ruby",
+    "*.tsv": "tsv"
+  },
+  "[plaintext]": {
+    "editor.wordWrap": "on",
+  },
+  "[tsv]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4
   },
   "files.insertFinalNewline": true,
   "html.format.enable": false,
@@ -37,8 +43,7 @@
   "typescript.implementationsCodeLens.enabled": false,
   //"gitlens.blame.annotation.style": "compact",
   //"gitlens.codeLens.visibility": "auto",
-  "window.zoomLevel": 1,
-  "python.formatting.provider": "yapf",
+  "window.zoomLevel": 2,
   "gitlens.keymap": "alternate",
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
@@ -47,4 +52,18 @@
   "workbench.colorTheme": "Solarized Dark",
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
+  "git.confirmSync": false,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "python.formatting.provider": "none",
+  "editor.renderWhitespace": "none",
+"diffEditor.ignoreTrimWhitespace": false,
+"python.languageServer": "Default",
+"workbench.editorAssociations": {
+  "*.ipynb": "jupyter.notebook.ipynb"
+},
+"security.workspace.trust.untrustedFiles": "open",
 }

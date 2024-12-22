@@ -1,8 +1,12 @@
+# Vagrant #
+.vagrant
+
 # Python #
 ##########
 __pycache__
 .ipynb_checkpoints
 venv
+*.pyc
 
 # Node #
 ########
